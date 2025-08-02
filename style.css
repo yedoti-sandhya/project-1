@@ -69,3 +69,12 @@ ul {
         text-decoration: line-through; 
         color: gray; 
     }
+
+
+    /* Responsive design */
+     @media (max-width: 768px) {
+     .main-content {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
