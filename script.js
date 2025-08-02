@@ -78,3 +78,4 @@ function editTask(icon) {
   span.after(input);
   input.focus(); // Auto-focus on the new input field
 }
+
