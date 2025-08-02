@@ -1,80 +1,85 @@
-body{
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    height: 100vh;
+body {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  height: 100vh;
 }
 
-.col-md-7{
-    margin-top: 150px !important;
-    background-color: white;
+.col-md-7 {
+  margin-top: 150px !important;
+  background-color: white;
 }
 
-h2{
-    text-align: center;
-    font-weight: bolder !important;
-    margin: 20px !important;
-    padding-bottom: 3%;
+h2 {
+  text-align: center;
+  font-weight: bolder !important;
+  margin: 20px !important;
+  padding-bottom: 3%;
 }
 
-button{
-    margin-left: 10px !important;
-    padding: 0.6em 1em !important; 
-    cursor: pointer !important;
+input,
+select {
+  width: 100% !important;
+  margin-bottom: 10px;
+  border: 3px solid black !important;
+  padding: 0.6em 1em !important;
 }
 
-input{
-    display: inline !important;
-    border: 3px solid black !important;
-    width: 48% !important;
-    padding: 0.6em 1em !important; 
+button {
+  padding: 0.6em 1em !important;
+  cursor: pointer !important;
 }
 
-select{
-    width: 38% !important;
-    padding: 0.6em 1em !important; 
-    border: 3px solid black !important;
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-
-ul { 
-    list-style: none; 
-    
+li {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 0.8em;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.info {
+  flex-grow: 1;
+  margin-left: 0.5em;
+}
 
+.meta {
+  font-size: 0.8em;
+  color: gray;
+}
 
-   
- li { 
-    background: #f9f9f9;
-      margin-bottom: 10px;
-      padding: 0.8em;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-     }
+.actions i {
+  cursor: pointer;
+  margin-left: 10px;
+}
 
-   .info { 
-    flex-grow: 1; 
-    margin-left: 0.5em; 
-   }
-    .meta { 
-        font-size: 0.8em; 
-        color: gray; 
-    }
-    .actions i {
-         cursor: pointer; 
-         margin-left: 10px ; 
-        }
-    .done span { 
-        text-decoration: line-through; 
-        color: gray; 
-    }
+.done span {
+  text-decoration: line-through;
+  color: gray;
+}
 
+@media (max-width: 768px) {
+  .col-md-7 {
+    margin-top: 50px !important;
+  }
 
-    /* Responsive design */
-     @media (max-width: 768px) {
-     .main-content {
-    flex-direction: column !important;
-    align-items: center !important;
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    margin-top: 10px;
+    align-self: flex-end;
   }
 }
+
+  }
+}
+
